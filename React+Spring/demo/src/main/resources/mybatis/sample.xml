@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.demo.mapper.SampleMapper">
+    <select id="selectStudent" resultType="com.example.demo.dto.student">;
+        SELECT name, belong, phone, status
+          FROM student WITH(NOLOCK)                  
+    </select>
+    <!-- <select id="selectEmp" resultType="com.example.spring_react_test.sample.dto.empVo">;
+        SELECT UserId, DeptNm, UserNm, DutyNm
+          FROM TCO_USER WITH(NOLOCK)       
+         WHERE User_Table LIKE '%' + #{name} + '%'           
+    </select> -->
+</mapper>
