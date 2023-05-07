@@ -16,6 +16,10 @@ public class EmpService {
         return sampleMapper.selectStudent();
     }
 
+    public List<student> selectSpStudent(String name) {
+        return sampleMapper.selectSpStudent(name);
+    }
+
     // public List<empVo> selectEmp(String name) {
     // return sampleMapper.selectEmp(name);
     // }
